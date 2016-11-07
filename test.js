@@ -1,20 +1,8 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module is-decimal
- * @fileoverview Test suite for `is-decimal`.
- */
-
 'use strict';
 
-/* eslint-env node */
-
-/* Dependencies. */
 var test = require('tape');
 var decimal = require('./');
 
-/* Tests. */
 test('decimal(character)', function (t) {
   t.ok(decimal('0'));
   t.ok(decimal('9'));
