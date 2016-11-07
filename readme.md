@@ -1,12 +1,10 @@
 # is-decimal [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-<!--lint disable heading-increment list-item-spacing-->
-
 Check if a character is decimal.
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install is-decimal
@@ -27,7 +25,7 @@ decimal('💩'); // false
 
 ## API
 
-### `decimal(character)`
+### `decimal(character|code)`
 
 Check whether the given character code (`number`), or the character
 code at the first position (`string`), is decimal.
@@ -36,6 +34,8 @@ code at the first position (`string`), is decimal.
 
 *   [`is-alphabetical`](https://github.com/wooorm/is-alphabetical)
 *   [`is-hexadecimal`](https://github.com/wooorm/is-hexadecimal)
+*   [`is-whitespace-character`](https://github.com/wooorm/is-whitespace-character)
+*   [`is-word-character`](https://github.com/wooorm/is-word-character)
 
 ## License
 
@@ -51,7 +51,7 @@ code at the first position (`string`), is decimal.
 
 [codecov]: https://codecov.io/github/wooorm/is-decimal
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 
