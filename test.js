@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var decimal = require('./');
+var decimal = require('.');
 
 test('decimal(character)', function (t) {
   t.ok(decimal('0'));
