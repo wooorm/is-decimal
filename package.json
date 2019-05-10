@@ -1,6 +1,6 @@
 {
   "name": "is-decimal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check if a character is decimal",
   "license": "MIT",
   "keywords": [
