@@ -33,7 +33,7 @@
   "scripts": {
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "build-bundle": "browserify . -s isDecimal -o is-decimal.js",
-    "build-mangle": "browserify . -s isDecimal -p tinyifgy -o is-decimal.min.js",
+    "build-mangle": "browserify . -s isDecimal -p tinyify -o is-decimal.min.js",
     "build": "npm run build-bundle && npm run build-mangle",
     "test-api": "node test",
     "test-coverage": "nyc --reporter lcov tape test.js",
