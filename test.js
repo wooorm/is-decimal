@@ -3,7 +3,7 @@
 var test = require('tape')
 var decimal = require('.')
 
-test('decimal(character)', function(t) {
+test('decimal(character)', function (t) {
   t.ok(decimal('0'))
   t.ok(decimal('9'))
   t.ok(decimal('1'.charCodeAt(0)))
