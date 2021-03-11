@@ -46,9 +46,9 @@ first position (`string`), is decimal.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/is-decimal.svg
+[build-badge]: https://github.com/wooorm/is-decimal/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/is-decimal
+[build]: https://github.com/wooorm/is-decimal/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-decimal.svg
 
