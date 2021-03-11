@@ -9,6 +9,9 @@ Check if a character is decimal.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,17 +21,20 @@ npm install is-decimal
 ## Use
 
 ```js
-var decimal = require('is-decimal')
+import {isDecimal} from 'is-decimal'
 
-decimal('0') // => true
-decimal('9') // => true
-decimal('a') // => false
-decimal('💩') // => false
+isDecimal('0') // => true
+isDecimal('9') // => true
+isDecimal('a') // => false
+isDecimal('💩') // => false
 ```
 
 ## API
 
-### `decimal(character|code)`
+This package exports the following identifiers: `isDecimal`.
+There is no default export.
+
+### `isDecimal(character|code)`
 
 Check whether the given character code (`number`), or the character code at the
 first position (`string`), is decimal.

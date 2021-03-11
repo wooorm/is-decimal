@@ -1,17 +1,15 @@
-'use strict'
+import test from 'tape'
+import {isDecimal} from './index.js'
 
-var test = require('tape')
-var decimal = require('.')
-
-test('decimal(character)', function (t) {
-  t.ok(decimal('0'))
-  t.ok(decimal('9'))
-  t.ok(decimal('1'.charCodeAt(0)))
-  t.notOk(decimal('a'))
-  t.notOk(decimal('0'.charCodeAt(0) - 1))
-  t.notOk(decimal('9'.charCodeAt(0) + 1))
-  t.notOk(decimal('F'.charCodeAt(0)))
-  t.notOk(decimal('💩'))
+test('isDecimal(character)', function (t) {
+  t.ok(isDecimal('0'))
+  t.ok(isDecimal('9'))
+  t.ok(isDecimal('1'.charCodeAt(0)))
+  t.notOk(isDecimal('a'))
+  t.notOk(isDecimal('0'.charCodeAt(0) - 1))
+  t.notOk(isDecimal('9'.charCodeAt(0) + 1))
+  t.notOk(isDecimal('F'.charCodeAt(0)))
+  t.notOk(isDecimal('💩'))
 
   t.end()
 })
