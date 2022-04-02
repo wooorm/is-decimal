@@ -28,17 +28,17 @@ In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 npm install is-decimal
 ```
 
-In Deno with [Skypack][]:
+In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {isDecimal} from 'https://cdn.skypack.dev/is-decimal@2?dts'
+import {isDecimal} from 'https://esm.sh/is-decimal@2'
 ```
 
-In browsers with [Skypack][]:
+In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {isDecimal} from 'https://cdn.skypack.dev/is-decimal@2?min'
+  import {isDecimal} from 'https://esm.sh/is-decimal@2?bundle'
 </script>
 ```
 
@@ -113,7 +113,7 @@ See [How to Contribute to Open Source][contribute].
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[skypack]: https://www.skypack.dev
+[esmsh]: https://esm.sh
 
 [license]: license
 
