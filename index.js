@@ -7,7 +7,7 @@
  */
 export function isDecimal(character) {
   const code =
-    typeof character === 'string' ? character.charCodeAt(0) : character
+    typeof character === 'string' ? character.codePointAt(0) : character
 
-  return code >= 48 && code <= 57 /* 0-9 */
+  return code !== undefined && code >= 48 && code <= 57 /* 0-9 */
 }
